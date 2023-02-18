@@ -14,7 +14,6 @@
 print("введите общее количество журавликов: ")
 result = int(input()) 
 
-
 count = 1
 while(result != count*6):
     count += 1

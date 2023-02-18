@@ -15,6 +15,7 @@ print("введите 6ти значный номер билета: ")
 ticket = str(input())
 leftNumb = int(ticket[0]) + int(ticket[1]) + int(ticket[2])
 rightNumb = int(ticket[3]) + int(ticket[4]) + int(ticket[5])
+
 if(leftNumb == rightNumb):
     print("Yes")
 else:
