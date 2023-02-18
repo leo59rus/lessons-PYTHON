@@ -15,7 +15,7 @@ print("введите общее количество журавликов: ")
 result = int(input()) 
 
 count = 1
-while(result != count*6):
+while result != count * 6:
     count += 1
 if result == count*6:
     print("Петя и Сережа сделали по ", count, " журавлика(ов), а Катя ", count*4, " журавлика(ов)") 
