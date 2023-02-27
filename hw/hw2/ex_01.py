@@ -9,25 +9,31 @@ import random
 
 n = int(input("сколько монет лежит на столе? -> "))
 coins = []
-for i in range(n):  
-    r = random.randint(0,1)
-    coins.append(r)
-    i+=1
+
+coins = [random.randint(0, 1) for i in range(n)]
+
+# for i in range(n):  
+#     r = random.randint(0, 1)
+#     coins.append(r)
+#     i+=1
+
+#вывод минимального значения колва 0-ей и 1-ц, чего меньше
+print(min(coins.count(0), coins.count(1)))
+
+
 print(f"{coins} где 1 это решка, а 0 это орёл")
 
-coint1 = 0
-coint0 = 0
-for i in range(n):
-    if coins[i] == 1:
-        coint1 += 1
-    else:
-        coint0 += 1
-if coint1 >= coint0:
-    print(f"необходимо перевернуть {coint0} монет(ы)")
-else:
-    print(f"необходимо перевернуть {coint1} монет(ы)")
-
-
+# coint1 = 0
+# coint0 = 0
+# for i in range(n):
+#     if coins[i] == 1:
+#         coint1 += 1
+#     else:
+#         coint0 += 1
+# if coint1 >= coint0:
+#     print(f"необходимо перевернуть {coint0} монет(ы)")
+# else:
+#     print(f"необходимо перевернуть {coint1} монет(ы)")
 
 
 #вместо цикла фор присваиваем листу значения одной строчкой
@@ -39,4 +45,4 @@ else:
 
 
 
-# 
+
