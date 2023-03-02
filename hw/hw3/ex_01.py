@@ -7,15 +7,16 @@
 #     3
 #     -> 1
 n = int(input("введите колво элтов: -- "))
-a = []
-for i in range(n):
-    a.append(int(input(f"введите {i + 1} элт массива: -- ")))
+
+# a = []
+# for i in range(n):
+#     a.append(int(input(f"введите {i + 1} элт массива: -- ")))
+a = [int(input(f"введите {i + 1} элт массива: -- ")) for i in range(n)]
 
 x = int(input("введи ?искомое? число: -- "))   
-countX = 0
-for i in range(n):
-    if i == x:
-        countX += 1
-    
-
-print(f"найдено {countX} элтов <{x}> в массиве чисел {a}")
+# countX = 0
+# for i in range(n):
+#     if a[i] == x:
+#         countX += 1
+# print(f"найдено {countX} элтов <{x}> в массиве чисел {a}")
+print(f"число {x} встречается в списке {a} {a.count(x)} раз!")

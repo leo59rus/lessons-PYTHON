@@ -17,13 +17,17 @@ x = int(input("введи число для поиска самого близк
 
 dict = {} # библиотека ключ разница    value-элт массива
 for i in range(n):
-    if x - a[i] < 0:
-        t = (x - a[i]) * -1
-        dict[int(t)] = a[i] #key-разница    value-элт массива 
+    # if x - a[i] < 0:
+    #     t = (x - a[i]) * -1
+    #     dict[int(t)] = a[i] #key-разница    value-элт массива 
 
-    else:
-        t = x - a[i]
-        dict[int(t)] = a[i]  #key-разница    value-элт массива 
+    # else:
+    #     t = x - a[i]
+    #     dict[int(t)] = a[i]  #key-разница    value-элт массива
+    # вместо верхнего применяем ABSolute
+    t = abs(x - a[i]) #ABSolute
+    dict[int(t)] = a[i]
+     
 
 listKey = [] # создание листа ключей
 for item in dict:
