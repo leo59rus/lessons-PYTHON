@@ -1,0 +1,12 @@
+# import modul 
+# print(modul.max_ab(5,12))
+
+# либо
+# from modul import max_ab
+# либо
+from modul import * # импорт всех функций класса
+
+print(max_ab(5,452))
+
+# import modul as m1 # импорт с переименованием
+# print(m1.max_ab(5,12))
