@@ -1,0 +1,13 @@
+def fib(n):
+    res = 0
+    # if (n == 1):
+    #     return 1
+    # elif (n == 0):
+    #     return 0
+    if n == 1 or n == 0:
+        return n
+    else:
+        res = fib(n - 1) + fib(n - 2)
+    return res
+
+print(fib(7))
