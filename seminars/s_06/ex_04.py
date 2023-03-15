@@ -23,7 +23,7 @@ def sum_deviders(l):#функция для нахождения суммы де�
             sum_l += i
     return sum_l
 
-#2.01.46
+
 print(sum_deviders(7)) 
    
 
