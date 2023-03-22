@@ -1,2 +1,2 @@
 stroka1 
-stroka3 
+stroka5 

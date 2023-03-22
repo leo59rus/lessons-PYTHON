@@ -18,16 +18,18 @@
 
 
 
-def print_operation_table(operation, num_rows = 8, num_columns = 8):
+def print_operation_table(operation, num_rows = 6, num_columns = 6):
     
-    for i in range(1, num_rows + 1):
-        print(i, end = "  ")
-        for j in range(2, num_columns + 1):
-            if i * j > 9:
-                print(i * j, end = "   ")
-            else:
-                print(i * j, end = "    ") 
-        print()
+    # for i in range(1, num_rows + 1):
+    #     print(i, end = "  ")
+    #     for j in range(2, num_columns + 1):
+    #         if i * j > 9:
+    #             print(i * j, end = "   ")
+    #         else:
+    #             print(i * j, end = "    ") 
+    #     print()
+    for row in range(1, num_rows + 1):
+        print(*map(operation, [row] * num_columns, range(1, num_columns + 1)), sep='\t')
 
 
 print_operation_table(lambda x, y: x * y)

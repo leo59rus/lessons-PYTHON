@@ -2,6 +2,6 @@
 #информация в файле перезаписывается
 with open('file14_03_2023.txt', 'w') as data:
     data.write('stroka1 \n')
-    data.write('stroka3 \n')
+    data.write('stroka5 \n')
 
 #фя with автоматически открывает и закр файл
